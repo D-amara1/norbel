@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+         .container {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 100px;
+            max-width: 900px;
+            width: 100%;
+            padding: 180px;
+            padding-bottom: 25px;
+            background-color: #f0f0f0;
+        
+        }
+
+        .contact-info, .contact-form {
+            width: 48%;
+        }
+
+        h2 {
+            color: #1c1cef;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .contact-info h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .contact-info p i {
+            color: #333;
+            margin-right: 8px;
+            text-align: center;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #1c1cef;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+        }
+        .phonenumber{
+            color: #333;
+        }
+        .phonenumber:hover{
+            transform: scale(1.01); 
+    opacity: 0.9; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logormv.png" alt="Logótipo" class="logo" style="margin-left: 20px;margin-top: 30px;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="portifolio.html">Portfolio</a></li>
+                <li><a href="conctact.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contactos</h2>
+                <h3>Contacte</h3>
+                <p><i class="fa fa-user"></i><strong>Nome:</strong> Dúval Amaral</p>
+                <p><i class="fas fa-map-marker-alt icon"></i><strong>Endereço:</strong> Triunfo, Costa do sol</p>
+                <p><i class="fas fa-envelope icon"></i>
+                    <strong>Email:</strong> <a href="mailto:duvalamaral1@gmail.com">duvalamaral1@gmail.com</a></p>
+                 <p><i class="fas fa-phone icon"></i>
+                    <strong>Phone:</strong> <a href="https://wa.me/258874071444">+258 87 407 1444</a>
+        </div>
+        <div class="contact-form">
+            <h2>Mande Mensagem</h2>
+            <form>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="assunto" placeholder="Assunto" required>
+                <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                <button type="submit" class="phonenumber">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dúval Amaral. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

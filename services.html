@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 2fr));
+            gap: 198px; 
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+
+        .card {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            gap: 5px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+        }
+        body{
+            background-color: #fff;
+        }
+        
+
+        .card{
+            width: 360px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            margin-left: 90px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 3px;
+            margin-right: 35px;
+            
+        }
+        .card:hover{
+            transform: scale(1.01); 
+    opacity: 0.9; 
+        }
+        .card img{ width: 100%; height: auto;
+        width: 170px;
+            max-width: 250px;
+    height: auto;
+    margin: 10px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.service4{
+    max-width: 300px; width: 220px; height: auto; margin: 40px 10px; margin-left: 20px;
+}
+.card img:hover{
+    transform: scale(0.9); 
+    opacity: 0.2; 
+}
+    
+
+        .card-content{
+            padding: 10px;
+            margin-left: 0px;
+            
+
+        }
+        .card-content h3{
+            font-size: 20px;
+            text-align:justify;
+            margin-bottom: 8px;
+
+        }
+        .card-content p{
+            color: #333;
+            font-size: 14px;
+            line-height: 1.1;
+            text-align: justify;
+        
+        }
+        .card-content .btn{
+            display:inline-block;
+            background:  rgb(211, 205, 205);
+            color: #333;
+            padding: 10px 20px;
+            text-decoration:solid;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            position:relative;
+            text-align: left;
+        }
+        .card-content .btn:hover{
+            background: rgb(103, 101, 101);
+        }
+
+
+
+
+
+        .container-p {
+            display: flex;
+            gap: 20px;
+        }
+        .card-p {
+            background-color: #f0f0f0;
+            padding: 9px;
+            border-radius: 30px;
+            width: 160px;
+            text-align: left;
+           
+        }
+        .card-p h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .progress-bar {
+            background-color: #555;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background-color:#1c1cef
+        }
+        .percentage {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+            <img src="img/logormv.png" alt="Logótipo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="services.html" class="active">serviços</a></li>
+                    <li><a href="portifolio.html">Portfolio</a></li>
+                    <li><a href="conctact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+    <h1 style="text-align: center;margin-top: 50px;margin-left: 40px;" >Meus Serviços</h1>
+    <div class="container">
+        <div class="card">
+            <img src="img/img configuração de Redes.png" alt="configuracoes de redes" class="service4">
+                    <div class="card-content" style="padding: 30px; margin-top: 70px;"> 
+                        <h3> Configuração de Redes</h3>
+                        <p>Criação e configuração de redes locais seguras e eficientes para melhorar a conectividade e o desempenho das suas operações.</p>
+                        
+                    </div>
+                    <div class="card-p">
+                        <h3></h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <div class="percentage">80%</div>
+                    </div>
+        </div>
+        <div class="card">
+            <img src="img/img_manutencao-removebg-preview.png" alt="Manutenção" class="service" >
+                    <div class="card-content"> 
+                        <h3> Manutenção de Sistemas</h3>
+                        <p>Ofereço serviços de manutenção preventiva e corretiva para garantir a estabilidade e o bom funcionamento dos seus sistemas.</p>
+                        
+                    </div>
+                    <div class="card-p">
+                        <h3></h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <div class="percentage">90%</div>
+                    </div>
+        </div>
+        <div class="card">
+            <img src="img/pngwing.com.png" alt="suporte informatico" class="service" >
+                    <div class="card-content"> 
+                        <h3> Suporte informatico</h3>
+                        <p>Atendimento personalizado para solucionar problemas técnicos e otimizar o desempenho dos seus equipamentos.</p>
+                        
+                    </div>
+                    <div class="card-p">
+                        <h3></h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 98%;"></div>
+                        </div>
+                        <div class="percentage">98%</div>
+                    </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dúval Amaral. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

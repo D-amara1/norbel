@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio {
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(285px, 2fr));
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+
+        .portfolio-item {
+            padding: 20px;
+            background-color: #f1f1f1;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+            gap: 50px;
+        }
+        .portfolio-item2 {
+            margin-top: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+            gap: 50px;
+        }
+
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+        }
+        .portfolio-item2:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        .portfolio-item h3 {
+            margin: 10px 0;
+        }
+        .p{
+            text-align: justify;
+            text-align: left;
+        }
+        .p2{
+            text-align: justify;
+            text-align: left;
+            margin-top: 135px;
+
+        }
+        .span{
+            color: #333;
+        }
+        .span:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logormv.png" alt="Logótipo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="portifolio.html" class="active">Portifolio</a></li>
+                <li><a href="conctact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="padding: 100px;">
+
+        <h1>Meu Portfólio</h1>
+        <p>Aqui estão alguns dos projetos que já realizei.</p>
+        <div class="portfolio">
+            
+        <div class="portfolio-item">
+            <h3>Projeto 1</h3>
+            <img src="img/projecto1.jpg" alt="projecto 1">
+            <p>Criação de uma Rede Local em Escritório Pequeno
+
+            </p>
+            <div class="portfolio-item">
+                <p style="margin-bottom: 20px;"><span>Descrição:</span> Planejei e implementei uma rede local para um escritório com 10 computadores, garantindo conectividade segura e estável para todos os dispositivos. O projeto incluiu configuração de switch, roteador e endereçamento IP.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projeto 2</h3>
+            <img src="img/spi.jpg" alt="projecto 2">
+            <p  style="margin-bottom: 20px;">Suporte Técnico Remoto
+            </p>
+            <div class="portfolio-item">
+                <p style="margin-bottom: 20px;">
+                    <span>Descrição:</span> Implantei um sistema de suporte técnico remoto, utilizando ferramentas como TeamViewer e AnyDesk, para oferecer suporte eficiente aos clientes.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projeto 3</h3>
+            <img src="img/projecto3.jpg" alt="projecto 3">
+            <p>Sistema de Backup Automatizado</p>
+            <div class="portfolio-item">
+                <p style="margin-bottom: 20px;">
+                    <span>Descrição:</span> Desenvolvi e configurei um sistema de backup automatizado para uma pequena empresa, garantindo a segurança e a integridade dos dados corporativos.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projeto 4</h3>
+            <img src="img/projecto4.jpg" alt="projecto 4">
+            <p>Configuração de Servidor de Arquivos
+            </p>
+            <div class="portfolio-item">
+                <p style="margin-bottom: 20px;"><span>Descrição:</span> Configurei um servidor de arquivos em ambiente Windows/Linux, permitindo acesso compartilhado seguro entre os funcionários de uma empresa.
+                </p>
+            </div>
+        </div>
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 Dúval Amaral. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

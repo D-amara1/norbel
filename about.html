@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      .body{
+          font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #1c1cef;
+      }
+      .container {
+        display: flex;
+        text-align: center;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 1px 0 0 40px;
+        
+        width: 80%;
+        overflow: hidden;
+        height: 50%;
+        margin: 10px;
+        margin-top: 90px;
+        margin-left: 110px;
+        
+
+      }
+      .container-p {
+        padding-top: 0;
+        max-width: 1100px;
+        margin: 20px;
+        margin-top: 10px;
+      }
+
+  
+      .about, .skills {
+        flex: 1;
+        min-width: 280px;
+        padding: 08px;
+      }
+      .skills {
+        text-align: left;
+        flex: 1;
+      }
+
+
+  
+      .about {
+        text-align: left;
+      }
+  
+      .image {
+        flex: 1;
+        text-align: right;
+        min-width: 300px;
+      }
+  
+      .image img {
+        max-width: 200px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+  
+      .links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+  
+      .links div {
+        flex: 0;
+        min-width: 300px;
+        padding: 10px;
+      }
+  
+      .links div h3 {
+    border-bottom: 2px solid #1c1cef;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration:underline;
+  }
+
+  .social-media {
+    text-align: center;
+    margin: 20px 0;
+    color: #333
+  }
+
+  .redes, .sociais {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin:0;
+      padding:0;
+      
+
+  }
+  .redes, .sociais, .net{
+      display: flex;
+      align-items: center;
+
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+  
+  }
+  .redes, .sociais, .net, .sed{
+      margin: 0;
+      flex: 1;
+
+
+  }
+  .redes, .sociais, .net, .sed, .df{
+      color: #333;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 5px 5px;
+      background-color: #ffff;
+      flex: 1;
+
+  }
+
+
+
+
+
+  .skills-p {
+            
+            gap: 20px;        
+        padding: 08px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 2fr));
+        }
+        .skills-p2 {
+            
+            gap: 20px;        
+        padding: 08px;
+        max-width: 1200px;
+
+        margin-top: 08px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        margin-top: 108px;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 2fr));
+        }
+        .card-p {
+            background-color: #f0f0f0;
+            padding: 9px;
+            border-radius: 30px;
+            width: 350px;
+            text-align: left;
+           
+        }
+        .card-p h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .progress-bar {
+            background-color: #e4dede;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 10px;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background-color:#1c1cef
+        }
+        .percentage {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+
+
+        .skills-section {
+            max-width: 1050px;
+            margin-left: 20px;
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+
+        .h2-p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 340px;
+            color: #1c1cef;
+        }
+        .a-pl{
+            text-decoration: none;
+             color: #1c1cef;
+
+        }
+        .a-pl :hover{
+    background-color: #333;
+        }
+
+        .skills-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-left: 70px;
+        }
+
+        .skills-column {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .skill-s {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            margin-right: 45px;
+            margin-left: 0;
+
+        }
+
+        .skill-name {
+            flex: 1;
+            text-align: left;
+        }
+
+        .skill-bar {
+            flex: 3;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background-color: #007bff; /* Cor azul */
+            border-radius: 5px;
+        }
+
+        .skill-percent {
+            flex: 1;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html" class="active">Sobre</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="portifolio.html">Portfolio</a></li>
+                <li><a href="conctact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <header> <img src="img/logormv.png" alt="Logótipo" class="logo" style="margin-bottom: 500px;"></header>
+      
+        <div class="container"; style="background-color: #cdc1f7;">
+    
+        <div class="about">
+          <h2 style="color: #1c1cef; margin-left: 38px;">Quem Sou ?</h2>
+          <p style="margin-left: 40px;">Olá! Chamo-me <span style="color: #1c1cef;">Dúval Amaral</span>. Sou apaixonado por tecnologia e especialista em suporte informático com experiência em redes e sistemas. Adoro resolver problemas e aprender coisas novas!</p>
+
+        </div>
+    
+        <div class="image">
+          <img src="img/dvl.jpg" alt="Minha Foto">
+        </div>
+      </div>
+    
+<div class="container" style="margin-top: 30px;">
+   <div class="container-p">
+            <h2 class="h2-p" color: #1c1cef;">Meus Skills</h2>
+               <div class="skills-p">
+                   <div class="card-p">
+                       <h3>Configuração e manutenção de redes</h3>
+                      <div class="progress-bar">
+                          <div class="progress" style="width: 80%;"></div>
+                      </div>
+                         <div class="percentage">80%</div>
+                  </div>
+              </div>
+        <div class="card-p">
+            <h3>Suporte técnico em hardware e software</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <div class="percentage">70%</div>
+        </div>
+    </div>
+
+    <div class="skills-p2">
+            <div class="card-p">
+                <h3>Programação em HTML e CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+                <div class="percentage">95%</div>
+            </div>
+            <div class="card-p">
+                <h3>Gestão de sistemas operacionais</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+                <div class="percentage">75%</div>
+        </div>
+
+    </div>
+</div>
+       
+        
+    
+
+<div class="skills-section">
+    
+    <div class="skills-row">
+        <!-- Primeira coluna -->
+        <div class="skills-column">
+            <h2><a class="a-pl" href="#">Experiência</a></h2>
+            <div class="skill-s">
+                <div class="skill-name">Informática</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 95%;"></div>
+                </div>
+                <div class="skill-percent">95%</div>
+            </div>
+            <div class="skill-s">
+                <div class="skill-name">Eletricidade</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 63%;"></div>
+                </div>
+                <div class="skill-percent">63%</div>
+            </div>
+        </div>
+
+        <!-- Segunda coluna -->
+        <div class="skills-column">
+            <h2 style="color: #1c1cef;"><a href="#" style="text-decoration: none; color: #1c1cef;">Educação</a></h2>
+            <div class="skill-s">
+                <div class="skill-name">CV-4</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+                <div class="skill-percent">85%</div>
+            </div>
+            <div class="skill-s">
+                <div class="skill-name">CV-3</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 100%;"></div>
+                </div>
+                <div class="skill-percent">100%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </body>
+    <footer>
+        <p>&copy; 2024 Dúval Amaral. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
